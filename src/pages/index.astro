@@ -1,0 +1,84 @@
+---
+import Layout from '../layouts/Layout.astro';
+import AudioSection from '../components/AudioSection.astro';
+---
+
+<Layout title="Meet You Outside Pod">
+	<main>
+		<!-- Hero Section -->
+		<section class="relative h-[70vh] flex items-center justify-center bg-[url('/hero-bg.jpg')] bg-cover bg-center">
+			<div class="absolute inset-0 bg-black/40"></div>
+			<div class="relative text-center text-white z-10 px-4">
+				<h1 class="text-6xl font-bold mb-4">Meet You Outside!</h1>
+				<p class="text-xl max-w-2xl mx-auto">A podcast for anybody looking to understand the country outside their bubble</p>
+			</div>
+		</section>
+
+		<div class="container mx-auto px-4 py-16 max-w-6xl">
+			<!-- The Show Section -->
+			<section id="the-show" class="mb-24">
+				<h2 class="section-title">The Show</h2>
+				<div class="max-w-3xl mx-auto text-center">
+					<p class="text-lg text-gray-700 leading-relaxed">
+						Two moms- a conservative former police officer and liberal stay at home parent - meet each other outside of ideological bubbles to better understand their own beliefs and the world.
+					</p>
+				</div>
+			</section>
+
+			<!-- The Hosts Section -->
+            <section id="the-hosts" class="mb-24">
+                <h2 class="section-title">The Hosts</h2>
+                <div class="max-w-3xl mx-auto"> <!-- Added container with max width -->
+                    <div class="host-card">
+                        <div class="aspect-video bg-secondary/20 relative overflow-hidden"> <!-- Changed to aspect-video -->
+                            <video
+                                controls
+                                class="w-full h-full object-cover"
+                                poster="/video-placeholder.jpg" <!-- Optional: add a placeholder image -->
+                            >
+                                <source src="/path-to-your-video.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="p-6 text-center">
+                            <h3 class="text-2xl font-bold text-primary mb-3">Meet Your Hosts</h3>
+                            <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+			<!-- The Podcast Section -->
+			<section id="the-podcast" class="mb-24">
+				<h2 class="section-title">The Podcast</h2>
+
+				<!-- Up Top Segment -->
+				<AudioSection sectionKey="upTop" />
+
+				<!-- The Convo Segment -->
+				<AudioSection sectionKey="theConvo" />
+
+				<!-- Enough! Segment -->
+				<AudioSection sectionKey="enough" />
+
+				<!-- RecoMOMdations -->
+				<AudioSection sectionKey="recomomdations" />
+			</section>
+
+			<!-- What We're Looking For -->
+			<section id="what-were-looking-for">
+				<h2 class="section-title">The Investment</h2>
+				<div class="grid md:grid-cols-2 gap-12">
+					<div class="bg-white rounded-lg shadow-md p-8 text-center">
+						<h3 class="text-2xl font-bold text-primary mb-4">Value Proposition</h3>
+						<p class="text-gray-700">In today's polarized world, Meet You Outside! offers a unique space where political beliefs are strengthened through understanding rather than isolation. Through conversations between a conservative former law enforcement officer mom and a liberal stay-at-home mom, listeners challenge and understand their own convictions by exploring differing beliefs</p>
+					</div>
+					<div class="bg-white rounded-lg shadow-md p-8 text-center">
+						<h3 class="text-2xl font-bold text-primary mb-4">What We're Looking For In A Partner</h3>
+						<p class="text-gray-700">We are looking to partner with a established podcast network from the conception of this idea to eventual publication</p>
+					</div>
+				</div>
+			</section>
+		</div>
+	</main>
+</Layout>

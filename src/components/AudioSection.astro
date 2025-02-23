@@ -1,0 +1,38 @@
+---
+// src/components/AudioSection.astro
+import { audioSections } from '../data/audioContent';
+
+const { sectionKey } = Astro.props;
+const section = audioSections[sectionKey];
+
+// Calculate grid columns based on number of clips
+// Create a mapping for the grid classes
+const gridColsClass = {
+    1: 'md:grid-cols-1',
+    2: 'md:grid-cols-2',
+    3: 'md:grid-cols-3',
+    4: 'md:grid-cols-4'
+}[section.clips.length] || 'md:grid-cols-4'; // default to 4 if unexpected number
+---
+
+<div class="mb-16">
+    <h3 class="text-2xl font-bold text-primary text-center mb-6">
+        {section.title}
+    </h3>
+    <p class="text-center text-gray-700 max-w-3xl mx-auto mb-8">
+        {section.description}
+    </p>
+    <div class={`grid ${gridColsClass} gap-6`}>
+        {section.clips.map((clip) => (
+            <div class="audio-player">
+                <div class="bg-secondary/10 rounded p-4 mb-4">
+                    <audio controls class="w-full">
+                        <source src={`/audio/${clip.fileName}`} type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <p class="text-sm text-gray-700">{clip.text}</p>
+            </div>
+        ))}
+    </div>
+</div>
