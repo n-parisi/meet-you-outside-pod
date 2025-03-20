@@ -3,26 +3,26 @@
 @tailwind utilities;
 
 @layer base {
-  html {
-    font-family: 'Montserrat', system-ui, sans-serif;
-  }
+    html {
+        font-family: "Montserrat", system-ui, sans-serif;
+    }
 }
 
 @layer components {
-  .section-title {
-    @apply text-4xl font-bold text-primary text-center mb-8 relative;
-  }
-  
-  .section-title::after {
-    content: '';
-    @apply block w-24 h-1 bg-accent mx-auto mt-4;
-  }
-  
-  .audio-player {
-    @apply bg-white rounded-lg shadow-md p-6 transition-transform hover:scale-105;
-  }
-  
-  .host-card {
-    @apply bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105;
-  }
+    .section-title {
+        @apply text-4xl font-bold text-primary text-center mb-8 relative;
+    }
+
+    .section-title::after {
+        content: "";
+        @apply block w-24 h-1 bg-accent mx-auto mt-4;
+    }
+
+    .audio-player {
+        @apply bg-white rounded-lg shadow-md p-6 transition-transform hover:scale-105;
+    }
+
+    .host-card {
+        @apply bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105;
+    }
 }

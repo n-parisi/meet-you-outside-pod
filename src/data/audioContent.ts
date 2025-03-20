@@ -2,26 +2,21 @@ export const audioSections = {
   upTop: {
     title: "Up Top",
     description:
-      "Talking about the top news storiesz of the week from Meg & Nora’s differing perspectives",
+      "Examining the top news stories of the week from Megan & Nora’s differing perspectives",
     clips: [
       {
         id: 1,
-        text: "Luigi is a terrorist?? On Luigi Mangione being charged with terrorism",
-        fileName: "uptop_luigi.mp3",
-      },
-      {
-        id: 2,
-        text: "The Freeze on Free Menendez: The New Los Angeles. D.A. scrutinizes resentencing recommendations for the Menendez brothers",
-        fileName: "uptop_menendez.mp3",
-      },
-      {
-        id: 3,
         text: "On Migrant Crime: The passing of the Laken Riley act and debatable immigration policy",
         fileName: "uptop_migrantcrime.mp3",
       },
       {
-        id: 4,
-        text: "Are We Really Safe if We Don’t Believe it? The gap between actual crime rates and people’s perceptions",
+        id: 2,
+        text: "Luigi is a terrorist? On Luigi Mangione being charged with terrorism",
+        fileName: "uptop_luigi.mp3",
+      },
+      {
+        id: 3,
+        text: "Are We Safe if We Don’t Believe it? The gap between actual crime rates and public perception",
         fileName: "uptop_generalcrime.mp3",
       },
     ],
@@ -33,43 +28,38 @@ export const audioSections = {
     clips: [
       {
         id: 1,
-        text: "My Wife is a Nightbitch: Was recent flop ‘Nightbitch a story about motherhood or a bad marriage?",
-        fileName: "theconvo_nightbitch.mp3",
-      },
-      {
-        id: 2,
-        text: "I’m Calling Bullshit: Meg shares her experience as a police officer working the Capitol on January 6th and the impact of presidential pardons",
+        text: "I’m Calling Bullshit: Megan shares her experience as a police officer working the Capitol on January 6th and the impact of presidential pardons",
         fileName: "theconvo_jan6.mp3",
       },
       {
+        id: 2,
+        text: "My Wife is a Nightbitch: Was recent movie flop ‘Nightbitch a story about motherhood or a bad marriage",
+        fileName: "theconvo_nightbitch.mp3",
+      },
+      {
         id: 3,
-        text: "The Unspoken Grief of Never Being a Grandparent: Is never being a grandparent grief a thing? Or is it more boomer nonsense?",
+        text: "The Unspoken Grief of Never Being a Grandparent: Is never being a grandparent grief a thing? Or is it just more boomer nonsense",
         fileName: "theconvo_grandparent.mp3",
       },
     ],
   },
   enough: {
-    title: "Enough!",
-    description: "Things which have forced Meg and Nora to say ENOUGH!!",
+    title: "Not to burst your bubble...",
+    description: "Things which have forced Megan and Nora to say ENOUGH!",
     clips: [
       {
         id: 1,
-        text: "The automatic curling wand: Instagram scams",
-        fileName: "enough_curlingwand.mp3",
-      },
-      {
-        id: 2,
-        text: "Stay at Home parent hardest job",
+        text: "Don’t lie to me! On working parents saying being a stay at home parent is the hardest job in the world",
         fileName: "enough_sahm.mp3",
       },
       {
-        id: 3,
-        text: "The truth about morning sickness",
-        fileName: "enough_morningsickness.mp3",
+        id: 2,
+        text: "It never works! Automatic curling wands and other Instagram scams",
+        fileName: "enough_curlingwand.mp3",
       },
       {
-        id: 4,
-        text: "Brittanhy Mahomes",
+        id: 3,
+        text: "Six days! The audacity of Brittany Mahomes and postpartum expectations",
         fileName: "enough_mahomes.mp3",
       },
     ],
@@ -81,23 +71,18 @@ export const audioSections = {
     clips: [
       {
         id: 1,
-        text: "NKP: Ace ♠ on TikTok ",
+        text: "Effective international relations: Ace ♠ on TikTok",
         fileName: "momdations_ace.mp3",
       },
       {
         id: 2,
-        text: "NKP: Protector by Beyoncé from Cowboy Carter",
-        fileName: "momdations_beyonce.mp3",
-      },
-      {
-        id: 3,
-        text: "Placeholder 1 (Younger)",
+        text: "Hilary Duff, we stan you for life: Younger (TV show)",
         fileName: "momdations_younger.mp3",
       },
       {
-        id: 4,
-        text: "Placeholder 2 (Paris Apartment)",
-        fileName: "momdations_paris.mp3",
+        id: 3,
+        text: "For those not in the Bhive: Protector by Beyoncé (song)",
+        fileName: "momdations_beyonce.mp3",
       },
     ],
   },

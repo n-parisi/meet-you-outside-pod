@@ -1,84 +1,170 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import AudioSection from '../components/AudioSection.astro';
+import Layout from "../layouts/Layout.astro";
+import AudioSection from "../components/AudioSection.astro";
 ---
 
 <Layout title="Meet You Outside Pod">
-	<main>
-		<!-- Hero Section -->
-		<section class="relative h-[70vh] flex items-center justify-center bg-[url('/hero-bg.jpg')] bg-cover bg-center">
-			<div class="absolute inset-0 bg-black/40"></div>
-			<div class="relative text-center text-white z-10 px-4">
-				<h1 class="text-6xl font-bold mb-4">Meet You Outside!</h1>
-				<p class="text-xl max-w-2xl mx-auto">A podcast for anybody looking to understand the country outside their bubble</p>
-			</div>
-		</section>
+    <main>
+        <!-- Hero Section -->
+        <section
+            class="relative h-[30vh] flex items-center justify-center bg-cover bg-center"
+            style="background-image: url('/image1.jpg');"
+        >
+            <div class="text-center text-white z-10 px-4">
+                <h1 class="text-5xl font-bold mb-4">
+                    The Meet You Outside Podcast:
+                </h1>
+                <p class="text-xl max-w-2xl mx-auto">
+                    Bursting bubbles, building bridges
+                </p>
+            </div>
+            <!-- Optional overlay for better text readability -->
+            <div class="absolute inset-0 bg-black opacity-40"></div>
+        </section>
+        <!-- <section
+            class="relative h-[30vh] flex items-center justify-center bg-sky-500"
+        >
+            <div class="text-center text-white z-10 px-4">
+                <h1 class="text-5xl font-bold mb-4">
+                    The Meet You Outside! Podcast
+                </h1>
+                <p class="text-xl max-w-2xl mx-auto">
+                    Bursting bubbles, building bridges
+                </p>
+            </div>
+        </section> -->
 
-		<div class="container mx-auto px-4 py-16 max-w-6xl">
-			<!-- The Show Section -->
-			<section id="the-show" class="mb-24">
-				<h2 class="section-title">The Show</h2>
-				<div class="max-w-3xl mx-auto text-center">
-					<p class="text-lg text-gray-700 leading-relaxed">
-						Two moms- a conservative former police officer and liberal stay at home parent - meet each other outside of ideological bubbles to better understand their own beliefs and the world.
-					</p>
-				</div>
-			</section>
+        <div class="container mx-auto px-4 py-16 max-w-6xl">
+            <!-- The Show Section -->
+            <section id="the-show" class="mb-24">
+                <h2 class="section-title">The Show</h2>
+                <div class="max-w-3xl mx-auto text-center">
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Two moms- a conservative former police officer and
+                        liberal stay at home parent - meet each other outside of
+                        ideological bubbles to transcend polarization and find
+                        common ground… or not! Meet You Outside is a podcast
+                        where different views about politics, culture, and
+                        parenthood aren't just tolerated but genuinely explored
+                        and respected.
+                    </p>
+                </div>
+            </section>
 
-			<!-- The Hosts Section -->
+            <!-- The Hosts Section -->
             <section id="the-hosts" class="mb-24">
                 <h2 class="section-title">The Hosts</h2>
-                <div class="max-w-3xl mx-auto"> <!-- Added container with max width -->
+                <div class="max-w-3xl mx-auto">
+                    <!-- Added container with max width -->
                     <div class="host-card">
-                        <div class="aspect-video bg-secondary/20 relative overflow-hidden"> <!-- Changed to aspect-video -->
-                            <video
-                                controls
-                                class="w-full h-full object-cover"
-                                poster="/video-placeholder.jpg" <!-- Optional: add a placeholder image -->
-                            >
-                                <source src="/path-to-your-video.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
+                        <div
+                            class="aspect-video bg-secondary/20 relative overflow-hidden"
+                        >
+                            <iframe
+                                class="w-full h-full absolute inset-0"
+                                src="https://www.youtube.com/embed/gUoutPUO8-w"
+                                title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                         </div>
                         <div class="p-6 text-center">
-                            <h3 class="text-2xl font-bold text-primary mb-3">Meet Your Hosts</h3>
-                            <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <h3 class="text-2xl font-bold text-primary mb-3">
+                                Meet Your Hosts
+                            </h3>
+                            <p class="text-gray-700">
+                                Megan Amaturo - <a
+                                    href="https://www.linkedin.com/in/megan-a-63066216b/"
+                                    >LinkedIn</a
+                                >
+                            </p>
+                            <p class="text-gray-700">
+                                Nora Kelly-Parisi - <a
+                                    href="https://www.linkedin.com/in/nora-kelly-parisi-221605102/"
+                                    >LinkedIn</a
+                                >, <a href="https://www.tiktok.com/@nora.kp0"
+                                    >TikTok</a
+                                >
+                            </p>
                         </div>
                     </div>
                 </div>
             </section>
 
-			<!-- The Podcast Section -->
-			<section id="the-podcast" class="mb-24">
-				<h2 class="section-title">The Podcast</h2>
+            <!-- The Podcast Section -->
+            <section id="the-podcast" class="mb-24">
+                <h2 class="section-title">The Podcast</h2>
 
-				<!-- Up Top Segment -->
-				<AudioSection sectionKey="upTop" />
+                <!-- Up Top Segment -->
+                <AudioSection sectionKey="upTop" />
 
-				<!-- The Convo Segment -->
-				<AudioSection sectionKey="theConvo" />
+                <!-- The Convo Segment -->
+                <AudioSection sectionKey="theConvo" />
 
-				<!-- Enough! Segment -->
-				<AudioSection sectionKey="enough" />
+                <!-- Enough! Segment -->
+                <AudioSection sectionKey="enough" />
 
-				<!-- RecoMOMdations -->
-				<AudioSection sectionKey="recomomdations" />
-			</section>
+                <!-- RecoMOMdations -->
+                <AudioSection sectionKey="recomomdations" />
+            </section>
 
-			<!-- What We're Looking For -->
-			<section id="what-were-looking-for">
-				<h2 class="section-title">The Investment</h2>
-				<div class="grid md:grid-cols-2 gap-12">
-					<div class="bg-white rounded-lg shadow-md p-8 text-center">
-						<h3 class="text-2xl font-bold text-primary mb-4">Value Proposition</h3>
-						<p class="text-gray-700">In today's polarized world, Meet You Outside! offers a unique space where political beliefs are strengthened through understanding rather than isolation. Through conversations between a conservative former law enforcement officer mom and a liberal stay-at-home mom, listeners challenge and understand their own convictions by exploring differing beliefs</p>
-					</div>
-					<div class="bg-white rounded-lg shadow-md p-8 text-center">
-						<h3 class="text-2xl font-bold text-primary mb-4">What We're Looking For In A Partner</h3>
-						<p class="text-gray-700">We are looking to partner with a established podcast network from the conception of this idea to eventual publication</p>
-					</div>
-				</div>
-			</section>
-		</div>
-	</main>
+            <!-- What We're Looking For -->
+            <section id="what-were-looking-for">
+                <h2 class="section-title">The Investment</h2>
+                <div class="grid md:grid-cols-3 gap-12">
+                    <div class="bg-white rounded-lg shadow-md p-8 text-center">
+                        <h3 class="text-2xl font-bold text-primary mb-4">
+                            Our Value
+                        </h3>
+                        <p class="text-gray-700">
+                            In today's polarized landscape, MYO fills a critical
+                            gap: authentic dialogue between women from different
+                            political backgrounds focused on understanding
+                            opposing views, not silencing them. As a former law
+                            enforcement officer and mental health expert, Megan
+                            would be a singular voice throughout the podcast and
+                            media universe. Her perspective in dialogue with
+                            Nora’s more liberal but not dogmatic outlook will
+                            engage listeners across the political spectrum.
+                        </p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-8 text-center">
+                        <h3 class="text-2xl font-bold text-primary mb-4">
+                            Our Audience
+                        </h3>
+                        <p class="text-gray-700">
+                            The target audience for MYO is politically engaged
+                            Gen X, Millenial and Gen Z folks feeling exhausted
+                            by partisan media. Intentionally not focusing on our
+                            personal lives will allow us to have greater reach
+                            across the gender gap to reach men and fathers in
+                            addition to the core audience of women and mothers.
+                            Representing both sides of the political spectrum
+                            and the position to exist outside of those
+                            definitions, we will have the ability to develop
+                            Republican, Democrat, and Independent listeners.
+                        </p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-8 text-center">
+                        <h3 class="text-2xl font-bold text-primary mb-4">
+                            Our Partnership
+                        </h3>
+                        <p class="text-gray-700">
+                            We are looking to work with a podcast network,
+                            rather than independently because we want to do this
+                            right. We believe in expertise and know that we
+                            would not be able to produce a quality podcast at
+                            the level of your network, by ourselves. We really
+                            believe in the purpose and reach of this concept and
+                            know it can succeed with the right support. We also
+                            want to be able to contribute back to an
+                            organization that took a chance on us, and continues
+                            to do so for other original, authentic voices in the
+                            future.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
 </Layout>
